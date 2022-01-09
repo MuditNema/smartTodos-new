@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bar Chart</title>
+    <style>
+      body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+      }
+      .chart-wrapper{
+        position: relative;
+        left: -15%;
+      }
+      .total-chart, .completed-chart{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(0, -50%);
+        background: rgb(230, 230, 230);
+        padding: 20px;
+      }
+      .completed-chart{
+        z-index: 100;
+        background: transparent;
+      }
+      .bar, .new-bar{
+        font: 15px sans-serif;
+        /* background-color: grey; */
+        text-align: right;
+        padding: 3px;
+        margin: 4px;
+        color: white;
+        transform: scaleX(0);
+        transform-origin: left;
+      }
+      .bar{
+        animation: scroll-in 2000ms ease-in-out forwards;
+      }
+      .new-bar{
+        animation: scroll-in 2000ms ease-in-out forwards 1500ms;
+      }
+      @keyframes scroll-in{
+        to{
+          transform: scaleX(1);
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="chart-wrapper">
+    <div class="total-chart"></div>
+    <div class="completed-chart"></div>
+    </div>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="bar-chart.js"></script>
+  </body>
+</html>

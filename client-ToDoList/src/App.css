@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;600&display=swap');
+*{
+  font-family: 'Sora', monospace;
+  box-sizing: border-box;
+}
+.root{
+  width: 100vw;
+  font-family: 'Sora', monospace;
+  font-weight: 300;
+}
+.body-wrapper{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100vw !important;
+  /* background: yellow; */
+}
+.body-item{
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 100vh;
+}
+.side-wrapper{
+  flex: 2;
+  background: #F7F7F7;
+  padding-right: 10px;
+  padding-bottom: 55px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  max-width: 350px !important;
+}
+.middle-wrapper{
+  flex: 4;
+}
+.right-wrapper{
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #F7F7F7;
+  padding-left: 15  px;
+  padding-bottom: 40px;
+}
+
+.logo-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-img{
+  padding: 1.5rem 0.25rem;
+  width: 75px;
+}
+img{
+  width: 100%;
+}
+.logo-title{
+  margin-top: 15px;
+  font-size: 2rem;
+  font-family: 'Sora', monospace;
+}
+.logo-title span{
+  font-weight: 600;
+}
+.hide{
+  display: none;
+}
+.navbar-list{
+  width: 100%;
+  font-family: 'Sora', monospace;
+  padding-top:20px;
+}
+.navbar-item{
+ margin-left: 50px;
+ /* background: red; */
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+ cursor: pointer;
+ width: 100%;
+ padding-left: 10px;
+}
+.active-item{
+  background: white;
+  border-left: 2px solid black;
+}
+.navbar-item img{
+  width: 30px;
+  padding: 19px 0px;
+}
+.navbar-item span{
+  margin-left: 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.app-motto{
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.app-motto span{
+  text-decoration: line-through;
+}
+.illustration{
+  margin-top: 50px;
+  width: 100%;
+}
+.illustration img{
+  width: 78%;
+}
+.user-info-wrapper{
+  margin-top: 35px;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 5px 10px;
+}
+.user-info-wrapper img{
+  margin-right: 5px;
+  width: 35px;
+}
+.extra-desc{
+  font-size: 1.2rem;
+  margin-top: 75px;
+  width: 90%;
+}
+.extra-desc p{
+  margin-bottom: 25px;
+}
+.btn-container{
+  margin-top: 20px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.landing-btns{
+  padding: 0.5rem 5rem;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.sign-up{
+  background: #696969;
+  color: white;
+}
+.login{
+  border: 2px solid #696969;
+}
+.developed-with{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.developed-with h3{
+  color: #696969;
+  font-size: 0.85rem;
+  margin-right: 10px;
+}
+.developed-with img{
+  margin-right: 5px;
+  width: 35px;
+}
+form{
+  width: 80%;
+  margin-top: 80px;
+  margin-left: 30px;
+}
+.signup-form{
+  margin-top: 30px;
+}
+.signup-form .form-field{
+  margin-bottom: 20px !important;
+}
+form .form-field{
+  margin-bottom: 35px !important;
+  font-weight: bold;
+}
+.submit-btn{
+  width: 200px !important;
+  background: #696969;
+  padding: 0.5rem 2rem;
+  border: none;
+}
+.login-motto{
+  font-size: 2rem;
+}
+#taskNumber, #userType{
+  margin-top: 10px;
+  height: 36px;
+  padding: 0.25rem 1.2rem;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.option-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.option-wrapper>*{
+  margin: 0px 15px;
+}
+.todo-container {
+  flex: 3;
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+.todo-card {
+  border-radius: 10px;
+  width: 245px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0px 0px 20px rgb(210, 210, 210);
+  font-family: 'Sora', monospace;
+  position: relative;
+}  
+.todo-card input{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(3.75);
+}
+.todo-card h1 {
+  font-size: 1.2rem;
+}
+.todo-card p{
+    font-size: 0.75rem;
+    width: 200px;
+}
+.todo-footer{
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+}
+.todo-footer>*{
+    background: rgb(226, 226, 226);
+    padding: 0.25rem 0.5rem;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.deadline-indicator span{
+    font-weight: bold;
+    margin-bottom: -5px !important;
+}
+.delete-btn img{
+    width: 100%;
+}
+.completed-task .todo-title, .completed-task .todo-desc{
+    text-decoration: line-through;
+}
+.completed-task{
+    background: rgb(245, 245, 245);
+    opacity: 0.7;
+}
+.dashboard-container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.dashboard-header{
+  width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.dashboard-title{
+  margin-top: 25px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.todo-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+}
+.task{
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #f7f7f7;
+  margin-bottom: 20px;
+  transform: scale(1.25);
+  position: relative;
+  left: 50px;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+}
+.task.completed-todo{
+  text-decoration: line-through;
+}
+.delete-todo{
+  position: absolute;
+  right: 10px;
+}
+.task label{
+  margin-left: 10px;
+}
+.delete-todo img{
+  width: 30px;
+}
+.dashboard-container form{
+  position: relative;
+  top: -100px;
+  right: -50px;
+  width: 400px;
+}
+.dashboard-container form button{
+  height: 50px;
+  margin-top: 10px;
+}
+.form-wrapper{
+  display: flex;
+  width: 800px;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard-container .form-field{
+  margin-right: 20px !important;
+  margin-top: 0; 
+}
+.container{
+  padding-top: 2rem;
+  display: grid;
+  width: 1100px;
+  height: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  grid-template-areas: 
+  "accomplishment accomplishment"
+  "bar-chart pie-chart"
+  "bar-chart pie-chart"
+  "procrast-index procrast-index"
+  ;
+}
+.container>*{
+  border: 2px solid red;
+}
+.accomplishment{
+  grid-area: accomplishment;
+}
+.wrapper{
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  width: 80%;  
+  background: rgb(243, 243, 243);
+  padding: 2em;
+  border-radius: 20px;
+}
+.dash{
+  height: 7px;
+  width: 25%;
+  margin: 0px 3px;
+  border-radius: 5px;
+  background: rgb(189, 189, 189);
+}
+.show-health{
+  font-size: 1.5rem;
+  background: rgb(243, 243, 243);
+  padding: 0.5rem 1rem;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+.bar-chart{
+  grid-area: bar-chart;
+}
+.pie-chart{
+  grid-area: pie-chart;
+}
+.procrast-index{
+  grid-area: procrast-index;
+}
+#myChart{
+  width: 80%;
+  height: 400px;
+}

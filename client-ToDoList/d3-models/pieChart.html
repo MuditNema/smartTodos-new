@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+      }
+  </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<body>
+
+<canvas id="myChart" style="width:100%;max-width:1000px"></canvas>
+
+<script>
+var xValues = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday","Saturday","Sunday"];
+var yValues = [4, 2, 3, 1, 2, 1, 3];
+var barColors = [
+  "red",
+  "blue",
+  "black",
+  "brown",
+  "green",
+  "grey",
+  "pink"
+];
+
+new Chart("myChart", {
+  type: "pie",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "Tasks completed for the last week"
+    }
+  }
+});
+</script>
+
+</body>
+</html>

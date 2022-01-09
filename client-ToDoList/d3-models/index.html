@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procrastination Index</title>
+    <style>
+        *{
+            margin : 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;  
+            width: 40%;  
+            background: rgb(243, 243, 243);
+            padding: 2em;
+            border-radius: 20px;
+        }
+        .dash{
+            height: 7px;
+            width: 25%;
+            margin: 0px 3px;
+            border-radius: 5px;
+            background: rgb(189, 189, 189);
+        }
+        .show-health{
+            font-size: 1.5rem;
+            background: rgb(243, 243, 243);
+            padding: 0.5rem 1rem;
+            margin-top: 5px;
+            border-radius: 10px;
+        }
+        /* .dash-1{
+            background: red;
+        }
+        .dash-2{
+            background: orange;
+        }
+        .dash-3{
+            background: rgb(252, 252, 13);
+        }
+        .dash-4{
+            background: green;
+        } */
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="dash-1 dash"></div>
+        <div class="dash-2 dash"></div>
+        <div class="dash-3 dash"></div>
+        <div class="dash-4 dash"></div>
+    </div>
+    <div class="show-health"></div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Area chart</title>
+  <style>
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+      }
+  </style>
+</head>
+<body>
+  <canvas id="myChart" style="width:100%;max-width:1000px"></canvas>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+<script>
+var xValues = ['January','February','March','April','May','June','July','August'];
+
+
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [ { 
+      label : 'Number of tasks',
+      data: [200,700,2000,5000,6000,4000,2000,1000,200,100],
+      borderColor: "red",
+      fill: true
+    }]
+  },
+  options: {
+    legend: {display: true,
+    },
+    scales: {
+        yAxes : [{
+            scaleLabel:{
+                display : true,
+                labelString : 'No of tasks'
+            }
+        }] 
+    }  
+  }
+});
+</script>
+</body>
+</html>
